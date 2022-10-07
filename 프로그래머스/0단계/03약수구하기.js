@@ -16,17 +16,44 @@
 
 // 하샤드! 
 
-let x = 10;
-let arr = x.toString().split('').map((value) => Number(value)).reduce((acc, cur) => acc + cur);
+// let x = 10;
+// let arr = x.toString().split('').map((value) => Number(value)).reduce((acc, cur) => acc + cur);
 
-if(x % arr === 0){
-    return console.log(true);
-}else{
-    return console.log(false);
+// if(x % arr === 0){
+//     return console.log(true);
+// }else{
+//     return console.log(false);
 
-}
+// }
 
 
 // 정수의 각 자리수!! ==> str => arr로 바꿔주는거 국룰...!! 
 // 형변환까지 map으로 시켜주기!! 
+
+
+let num = 10;
+
+function solving(num){
+    // 1. 짝수 => 2로 나눔. , 홀수 => 3을 곱하고 1을 더한다. 
+    // 위 작업을 계속 반복하낟...!! 
+    let count = 1; // 무조건 1번은 해야하니까! 
+    while(true){
+        if(num % 2 === 0){
+            num = parseInt(num / 2);
+        }else{
+            num = (num * 3) + 1;
+        }
+
+        if( num === 1){
+            console.log(`count >> ${count}`);
+            break; // 나간다.!             
+        }else{ 
+            count++;
+        }
+    }
+
+    return count;
+}
+console.log(solving(16));
+
 
