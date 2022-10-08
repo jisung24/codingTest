@@ -81,15 +81,66 @@
 
 // return ele !== Math.min(...arr)
 
-let value = [4, 7, 12];
-let signs = [true, false, true]
+// let value = [4, 7, 12];
+// let signs = [true, false, true]
 
-let sum = value.reduce((acc, cur, idx) => {
-    if(signs[idx] === false){
-        cur *= -1;
-    }
-    console.log(cur);
-    return acc + cur;
-}, 0)
+// let sum = value.reduce((acc, cur, idx) => {
+//     if(signs[idx] === false){
+//         cur *= -1;
+//     }
+//     console.log(cur);
+//     return acc + cur;
+// }, 0)
 
-console.log(sum);
+// console.log(sum);
+
+// 수 박 수 박..!! 
+
+// 수 수 => 1 3 5 홀수 - 1
+// let arr = [];
+
+// arr[2n - 1] = "수"; // 이미 자리가 정해져있는.. 값들은 미리 이렇게 나눠서 식을 써줌..!! 
+// arr[2n] = "박";
+
+// // 3
+
+// for(let i = 1; i <=3; i++){
+//     arr[2n - 1] = "수";
+//     arr[2n] = "박";
+// }
+
+// 수는 홀수...
+// 박은 짝수...번째만 들어올 수 있어!! 
+// 수 : 1,3,5,7,9
+// 박 : 2,4,6,8,10
+
+// 숫자 3 
+// let arr = [];
+// let number = 4; // "수 박 수" [1,2,3]
+
+// for(let i = 0; 2*i <= number; i++){
+//     if( i % 2 === 0){
+//         arr.push("수");
+//     }else{
+//         arr.push("박");
+//     }
+// }
+// console.log(arr);
+
+// let str = "a234";
+// // typeof Number가 아닌걸 찾아보자....!! 
+
+// // isNaN(value) 이걸로 숫자인지 아닌지 판단한다...!!
+// // console.log(isNaN("e")); // 숫자가 아님 => true
+// // console.log(isNaN(4)); // 숫자가 맞음 => false
+
+// for(let i = 0; i<str.length; i++){
+//     if(isNaN(str[i]) === true){
+//         console.log(`숫자가 아닌건 ${str[i]}`);
+//     }else{
+//         console.log('다 숫자야!');
+//     }
+// }
+
+
+// "수박수박수박..." 문제풀이 완료! 
