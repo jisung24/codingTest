@@ -144,3 +144,33 @@
 
 
 // "수박수박수박..." 문제풀이 완료! 
+
+
+/**
+ * 두 정수 left와 right가 매개변수로 주어집니다. 
+ * left부터 right까지의 모든 수들 중에서, 
+ * 약수의 개수가 짝수인 수는 더하고, 
+ * 약수의 개수가 홀수인 수는 뺀 수를 
+ * return 하도록 solution 함수를 완성해주세요.
+ */
+
+
+// 최대공약수 : G
+// 최소공배수 : L
+// 두 수 : num1, num2
+
+// let arr = [1,1,3,3,0,1,1];
+
+// let newArr = arr.filter((ele, idx) => {
+//     if(ele[idx] !== ele[idx + 1]){
+//         return ele;
+//     }
+// })
+
+// console.log(newArr);
+
+let str = "1 2 3 4";
+let arr = str.split(' ').map((value) => +value);
+let joinArr = arr.join(" ");
+console.log(joinArr, typeof joinArr);
+
