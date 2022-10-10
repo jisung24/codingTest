@@ -169,8 +169,35 @@
 
 // console.log(newArr);
 
-let str = "1 2 3 4";
-let arr = str.split(' ').map((value) => +value);
-let joinArr = arr.join(" ");
-console.log(joinArr, typeof joinArr);
+
+// 띄어쓰기 문자열 나온다..?? ==> 배열임. 
+// let str = "3people unFollowed me"; 
+// let strArr = str.split(' ').map((value) => {
+//     // 내가 어떤 값을 control하는지 파악하는게 제일 중요함...!! 
+//     // 만약 value[0]이 숫자거나 " "면 나머지 value.toLowerCase()
+//     if(isNaN(value[0]) === false || value[0] === ""){
+//         value.toLowerCase();
+//     }else{ // 영어일경우!! 
+//         value[0].toUpperCase();
+//     }
+// });
+
+// A = [1, 4, 2];
+// B = [5, 4, 4];
+// 같은 idx위치에 있는 숫자를 더해서 []에 push하고 이거 더하자...!! 
+
+let a = [1, 4, 2];
+let b = [5, 4, 4];
+
+let sumArr = a.reduce((acc, cur, idx) => {
+    acc.push(cur * b[idx]); // cur값이랑 b[idx]값이랑 더한 값을 push 해줌! 
+    // 아 먼저 집어넣는 코드를 쭉 짜놔야해! 
+    console.log(acc, cur, idx);
+    // acc가 일단 빈 배열이니까....
+    return acc;
+}, []).reduce((acc, cur) => {
+    return acc + cur;
+});
+console.log(sumArr);
+
 
