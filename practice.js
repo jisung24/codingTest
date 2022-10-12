@@ -186,18 +186,24 @@
 // B = [5, 4, 4];
 // 같은 idx위치에 있는 숫자를 더해서 []에 push하고 이거 더하자...!! 
 
-let a = [1, 4, 2];
-let b = [5, 4, 4];
 
-let sumArr = a.reduce((acc, cur, idx) => {
-    acc.push(cur * b[idx]); // cur값이랑 b[idx]값이랑 더한 값을 push 해줌! 
-    // 아 먼저 집어넣는 코드를 쭉 짜놔야해! 
-    console.log(acc, cur, idx);
-    // acc가 일단 빈 배열이니까....
-    return acc;
-}, []).reduce((acc, cur) => {
-    return acc + cur;
-});
-console.log(sumArr);
+// 저 문자열 idx가 짝수면 대문자로,
+// 홀수면 소문자로! 
 
 
+
+// 지금 map filter의 동작원리를 잘 모르고있어...
+// 반복문이 어떻게 돌아가는지 알 수 없어...  => 몇 번 반복되고 안의 value가 정확히 뭐인지 더 파악을 해야돼....
+let str = "try hello world";
+let newArr = []; // 문자열을 정확하게 만들어서 다 return해줄거야...!!
+
+// 1. reduce로....!! 
+
+// 2. map으로 => 모든 원소의 index짝수번쨰의 값을 대문자로 바꿔주자!! 
+let s = str.split(' ').map((value, index) => {
+    // value와 index는 총 3번 반복되는거야...!! 
+    // 값 1개 당 index도 1개... 그럼 값 1개 try에 index 3개는 어떡하지....!
+    
+    return index + 1;
+})
+console.log(s);
