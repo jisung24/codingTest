@@ -2,7 +2,7 @@
 // 모든 단어의 첫 문자가 대문자이고, 그 외의 알파벳은 소문자!
 // 첫 단어가 영어가 아니라면 그 다음 알파벳은 소문자로! 
 
-let pattern = /[a-zA-Z]/;
+let pattern = /[a-zA-Z]/; // 정규식 -> 영어인지 아닌지, test함수를 사용할 수 있다.
 let value = 3;
 let str = "U";
 
@@ -34,7 +34,7 @@ function solution(s){ // 3people unFollowed me
     let arr = s
     .split(' ') // 배열로 만들고, 
     .map((value) => {
-        let first = value.slice(0, 1);
+        let first = value.slice(0, 1); // deep copy! => 원본 이상없음.
         let last = value.slice(1); // 1부터 끝까지! 
 
         if(pattern.test(first)){
