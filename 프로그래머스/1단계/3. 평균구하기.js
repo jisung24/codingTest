@@ -32,8 +32,10 @@
 // solution(arr)은 배열 주소값 자체를 얕은복사로 전달받는다는 소리고,
 // solution(...arr)은 여러개의 값을 입력받아서 배열로 만들어준다는 의미
 
-function test(...arr){
+function test(...arr){ // 여러개의 값을 받는데, 이를 여러 개의 값으로 받아서 배열로 만들어준다. 
     return arr;
 }
 console.log(test(7,9,11,20)); // 이런식으로 값을 입력받는다는 소리
 // 요약 ...는 값을 arr은 배열 자체를!!!
+
+// 
