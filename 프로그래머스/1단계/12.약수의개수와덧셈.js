@@ -16,6 +16,8 @@ function solution(left, right) { // 값이 deep copy됨.
                 console.log(`${i}의 약수 >> ${j}`);
                 // 코딩테스트 복습
                 // 1단계 2단계 복습!
+                // 2단계 2문제 풀이 && 복습 
+                // || >= <= 
                 count++;
             }
         }
